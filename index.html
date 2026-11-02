@@ -17,102 +17,88 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=home-nav-1" />
+  <link rel="stylesheet" href="styles.css?v=syfroedge-2026-2" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="utility-bar"><div class="container utility-inner"><span>Based in Accra. Focused on your next step.</span><a href="tel:+233269999922">Let’s talk: +233 26 999 9922</a></div></div>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="SyfroEdge Consult home">
         <span class="brand-logo"><img src="/syfroedge-logo.webp" alt="SyfroEdge Consult" /></span>
       </a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
-      <nav class="nav" aria-label="Primary navigation">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><span aria-hidden="true">☰</span></button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         <a href="#top">Home</a>
         <a href="#services">Services</a>
         <a href="#study-abroad">Study Abroad</a>
-        <a href="#approach">Approach</a>
+        <a href="#approach">Our approach</a>
         <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Start a project</a>
+        <a href="#contact" class="nav-cta">Let’s talk <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
+  <main id="top"><div id="main-content" tabindex="-1"></div>
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Strategy • Research • Digital • Growth</p>
-          <h1>Ideas are useful.<br><span>Execution creates impact.</span></h1>
-          <p class="hero-lead">SyfroEdge Consult helps organisations make better decisions, solve difficult problems and turn plans into measurable results.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Start a project</a>
-            <a class="btn btn-secondary" href="#services">Explore services</a>
-          </div>
-          <div class="audience-strip">
-            <span>Businesses</span><span>Public institutions</span><span>NGOs</span><span>Researchers</span>
-          </div>
+          <p class="eyebrow"><span class="label-line" aria-hidden="true"></span>Strategy. Research. Opportunity.</p>
+          <h1 id="hero-title">Clear thinking.<br><span>Confident<br>next steps.</span></h1>
+          <p class="hero-lead">Better decisions for your business. New possibilities for your future. Consulting, research and study abroad support, built around you.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#services">Explore our expertise <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#study-abroad">Plan your studies <span aria-hidden="true">→</span></a></div>
+          <div class="hero-location"><span class="location-dot" aria-hidden="true"></span>Accra, Ghana <span aria-hidden="true">/</span> SyfroEdge Consult</div>
         </div>
         <div class="hero-visual">
-          <figure class="hero-image">
-            <img src="/hero-consulting.webp" width="1599" height="900" alt="Four professionals reviewing charts and a laptop during a consulting discussion." loading="eager" fetchpriority="high" decoding="async" />
-          </figure>
-        <div class="hero-panel" aria-label="SyfroEdge consulting capabilities">
-          <div class="panel-top">
-            <span>SYFROEDGE</span>
-            <span class="status-dot">Available for new engagements</span>
-          </div>
-          <div class="panel-body">
-            <p class="panel-label">We help you move from</p>
-            <div class="flow">
-              <div><strong>Question</strong><span>What is really happening?</span></div>
-              <div><strong>Insight</strong><span>What does the evidence say?</span></div>
-              <div><strong>Action</strong><span>What should we do next?</span></div>
-            </div>
-          </div>
-          <div class="panel-foot">Clear thinking. Practical solutions. Better outcomes.</div>
-        </div>
+          <figure class="hero-image"><img src="/hero-consulting.webp" width="1599" height="900" alt="Professionals working together on a consulting assignment." fetchpriority="high" decoding="async"><figcaption><span>Good questions.<br><strong>Practical answers.</strong></span><span class="image-arrow" aria-hidden="true">↗</span></figcaption></figure>
+          <div class="hero-note"><span class="note-number" aria-hidden="true">01 /</span><p>From the first conversation to your next move.<br><strong>Clarity at every step.</strong></p></div>
         </div>
       </div>
     </section>
+    <section class="pathways" aria-label="Find the right support"><div class="container pathway-grid">
+      <a href="#services" class="pathway"><span class="pathway-icon" aria-hidden="true">↗</span><div><span class="micro-label">For organisations &amp; researchers</span><h2>Move your work forward.</h2><p>Find the expertise for your next challenge.</p></div></a>
+      <a href="#study-abroad-enquiry" class="pathway"><span class="pathway-icon" aria-hidden="true">↗</span><div><span class="micro-label">For future international students</span><h2>Find your next opportunity.</h2><p>Tell us your plans. We’ll help you explore.</p></div></a>
+    </div></section>
 
     <section class="section" id="services">
       <div class="container">
         <div class="section-head">
           <div>
             <p class="eyebrow">What we do</p>
-            <h2>Expertise that solves real business problems.</h2>
+            <h2>Different challenges.<br>One connected team.</h2>
           </div>
-          <p>Choose the support you need. We can lead a focused assignment or work across multiple areas.</p>
+          <p>Explore our services to find the right starting point. We can support a focused assignment or connect expertise across your project.</p>
         </div>
-        <div class="service-grid">
-          <article class="service-card featured">
+        <div class="service-toolbar" hidden><div class="service-filters" role="group" aria-label="Filter services"><button type="button" data-filter="all" aria-pressed="true">All expertise</button><button type="button" data-filter="business" aria-pressed="false">Business &amp; digital</button><button type="button" data-filter="research" aria-pressed="false">Research</button><button type="button" data-filter="education" aria-pressed="false">Education</button><button type="button" data-filter="trade" aria-pressed="false">Trade &amp; projects</button></div><p id="service-count" role="status" aria-live="polite">6 services</p></div>
+        <div class="service-grid" id="service-results">
+          <article data-category="business" class="service-card featured">
             <div class="service-media">
               <img src="/service-strategy.webp" width="1200" height="659" alt="A presenter discussing a strategy chart with colleagues." loading="lazy" decoding="async" />
             </div>
             <span class="service-no">01</span>
             <h3>Business & Management Consulting</h3>
             <p>Strategy, performance improvement, organisational planning and decision support.</p>
-            <a href="#contact">Discuss a challenge →</a>
+          <details class="service-details"><summary>Explore this service <span aria-hidden="true">+</span></summary><div><p>How we can help</p><ul><li>Business strategy and planning</li><li>Performance and organisational improvement</li><li>Decision support</li></ul><a class="text-link" href="mailto:info@syfroedge.com?subject=Enquiry%20%E2%80%94%20Business%20Consulting">Discuss this service <span aria-hidden="true">↗</span></a></div></details>
           </article>
-          <article class="service-card">
+          <article data-category="research" class="service-card">
             <div class="service-media">
               <img src="/service-research.webp" width="1200" height="659" alt="Two analysts reviewing charts and dashboard displays." loading="lazy" decoding="async" />
             </div>
             <span class="service-no">02</span>
             <h3>Research & Data Analysis</h3>
             <p>Research design, market studies, analytics, academic support and evidence-led reporting.</p>
+          <details class="service-details"><summary>Explore this service <span aria-hidden="true">+</span></summary><div><p>How we can help</p><ul><li>Research design and market studies</li><li>Data analysis and interpretation</li><li>Evidence-led reporting</li></ul><a class="text-link" href="mailto:info@syfroedge.com?subject=Enquiry%20%E2%80%94%20Research%20and%20Data">Discuss this service <span aria-hidden="true">↗</span></a></div></details>
           </article>
-          <article class="service-card">
+          <article data-category="business" class="service-card">
             <div class="service-media">
               <img src="/service-digital.webp" width="1200" height="660" alt="Three professionals exploring a tablet alongside digital devices." loading="lazy" decoding="async" />
             </div>
             <span class="service-no">03</span>
             <h3>Digital Transformation & AI</h3>
             <p>Digital strategy, AI adoption, process improvement and technology-enabled growth.</p>
+          <details class="service-details"><summary>Explore this service <span aria-hidden="true">+</span></summary><div><p>How we can help</p><ul><li>Digital strategy and process improvement</li><li>AI adoption planning</li><li>Technology-enabled growth</li></ul><a class="text-link" href="mailto:info@syfroedge.com?subject=Enquiry%20%E2%80%94%20Digital%20and%20AI">Discuss this service <span aria-hidden="true">↗</span></a></div></details>
           </article>
-          <article class="service-card">
+          <article data-category="business" class="service-card">
             <div class="service-media service-media-illustration" aria-hidden="true">
               <svg viewBox="0 0 420 236" width="420" height="236" focusable="false">
                 <circle class="illustration-halo" cx="220" cy="118" r="102" />
@@ -122,17 +108,18 @@
             <span class="service-no">04</span>
             <h3>Marketing Consulting</h3>
             <p>Brand, customer insight, marketing strategy, digital marketing and campaign planning.</p>
+          <details class="service-details"><summary>Explore this service <span aria-hidden="true">+</span></summary><div><p>How we can help</p><ul><li>Brand and marketing strategy</li><li>Customer insight and digital marketing</li><li>Campaign planning</li></ul><a class="text-link" href="mailto:info@syfroedge.com?subject=Enquiry%20%E2%80%94%20Marketing%20Consulting">Discuss this service <span aria-hidden="true">↗</span></a></div></details>
           </article>
-          <article class="service-card">
+          <article data-category="education" class="service-card">
             <div class="service-media">
               <img src="/service-education.webp" width="1199" height="675" alt="Three people learning together using a laptop and printed materials." loading="lazy" decoding="async" />
             </div>
             <span class="service-no">05</span>
             <h3>Education Consulting</h3>
             <p>Programme development, training, professional learning and academic project support.</p>
-            <a href="#study-abroad">Explore Study Abroad →</a>
+          <details class="service-details"><summary>Explore this service <span aria-hidden="true">+</span></summary><div><p>How we can help</p><ul><li>Programme development and training</li><li>Professional and academic support</li><li>Study abroad planning</li></ul><a class="text-link" href="#study-abroad-enquiry">Start a study enquiry <span aria-hidden="true">↗</span></a></div></details>
           </article>
-          <article class="service-card">
+          <article data-category="trade" class="service-card">
             <div class="service-media service-media-illustration" aria-hidden="true">
               <svg viewBox="0 0 420 236" width="420" height="236" focusable="false">
                 <circle class="illustration-halo" cx="220" cy="118" r="102" />
@@ -142,6 +129,7 @@
             <span class="service-no">06</span>
             <h3>Trade & Project Services</h3>
             <p>Import/export support, general supplies, building and construction coordination.</p>
+          <details class="service-details"><summary>Explore this service <span aria-hidden="true">+</span></summary><div><p>How we can help</p><ul><li>Import and export support</li><li>General supplies</li><li>Building and construction coordination</li></ul><a class="text-link" href="mailto:info@syfroedge.com?subject=Enquiry%20%E2%80%94%20Trade%20and%20Projects">Discuss this service <span aria-hidden="true">↗</span></a></div></details>
           </article>
         </div>
       </div>
@@ -151,7 +139,7 @@
       <div class="container approach-grid">
         <div>
           <p class="eyebrow">How we work</p>
-          <h2>Simple process. Serious thinking.</h2>
+          <h2>A clear process.<br>A shared direction.</h2>
           <p class="large-copy">We keep the process clear so you always know what is being solved, why it matters and what happens next.</p>
         </div>
         <div class="steps">
@@ -167,19 +155,19 @@
       <div class="container approach-grid">
         <div>
           <p class="eyebrow">Study Abroad</p>
-          <h2 id="study-abroad-title">Your next chapter starts with the right plan.</h2>
+          <h2 id="study-abroad-title">A world of possibilities.<br><span>Your own path.</span></h2>
           <p class="large-copy">Planning to study outside Ghana? Get practical support to explore your options, prepare your applications and take the next step towards undergraduate or postgraduate study.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#study-abroad-enquiry">Start your study enquiry</a>
             <a class="btn btn-secondary" href="tel:+233269999922">Call our team</a>
           </div>
         </div>
-        <div class="steps" aria-label="Study abroad support">
+        <div class="study-right"><figure class="study-image"><img src="/service-education.webp" width="1199" height="675" alt="Students exploring their options together with a laptop." loading="lazy" decoding="async"><figcaption>Start with your goals. Explore what comes next.</figcaption></figure><div class="steps" aria-label="Study abroad support">
           <div class="step"><span aria-hidden="true">01</span><div><h3>Choose your direction</h3><p>Explore destinations, institutions and programmes that suit your interests, academic background and budget.</p></div></div>
           <div class="step"><span aria-hidden="true">02</span><div><h3>Prepare your application</h3><p>Get guidance on application requirements, document checklists, personal statements and submission planning.</p></div></div>
           <div class="step"><span aria-hidden="true">03</span><div><h3>Explore funding options</h3><p>Identify scholarships and other funding opportunities to research, and plan for tuition and living costs.</p></div></div>
           <div class="step"><span aria-hidden="true">04</span><div><h3>Plan your next steps</h3><p>Organise your offer requirements, accommodation research and preparations for life in a new country.</p></div></div>
-        </div>
+        </div></div>
       </div>
     </section>
 
@@ -187,23 +175,23 @@
     <section class="section study-enquiry" id="study-abroad-enquiry" aria-labelledby="enquiry-title">
       <div class="container">
         <div class="section-head">
-          <div><p class="eyebrow">Let’s plan your next step</p><h2 id="enquiry-title">Tell us about your study plans.</h2></div>
+          <div><p class="eyebrow">Let’s plan your next step</p><h2 id="enquiry-title">Your study journey.<br>Let’s start here.</h2></div>
           <p>Have a school in mind, or need help choosing? Start here. This is an initial enquiry; individual school and country requirements will be checked with you.</p>
         </div>
-        <div class="enquiry-panel">
+        <div class="enquiry-panel"><div class="enquiry-progress" hidden><div class="progress-top"><span id="enquiry-step-label">Step 1 of 5 · About you</span><span id="enquiry-step-percent">20%</span></div><div class="progress-track" role="progressbar" aria-label="Enquiry progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"><span></span></div></div>
           <p class="enquiry-intro" id="enquiry-instructions">Fields marked * are required. Complete the form, review your details, then send the prepared enquiry from your email app to <a href="mailto:info@syfroedge.com">info@syfroedge.com</a>. Your enquiry is only sent when you send that email.</p>
           <noscript><p>Please enable JavaScript to prepare your enquiry, or email your study plans to <a href="mailto:info@syfroedge.com">info@syfroedge.com</a>.</p></noscript>
           <form id="study-enquiry-form" aria-describedby="enquiry-instructions" hidden>
-<fieldset class="enquiry-group"><legend>01 · About you</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-full-name">Full name <span aria-hidden="true">*</span></label><input type="text" id="sa-full-name" name="Full name" autocomplete="name" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-email">Email address <span aria-hidden="true">*</span></label><input type="email" id="sa-email" name="Email" autocomplete="email" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-phone">Phone / WhatsApp (include country code) <span aria-hidden="true">*</span></label><input type="tel" id="sa-phone" name="Phone" autocomplete="tel" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-country-of-residence">Country of residence <span aria-hidden="true">*</span></label><input type="text" id="sa-country-of-residence" name="Country of residence" autocomplete="country-name" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-nationality">Nationality</label><input type="text" id="sa-nationality" name="Nationality" maxlength="120"><small>Helps us check the relevant admission and funding criteria.</small></div><div class="enquiry-field"><label for="sa-contact-method">Preferred contact method</label><select id="sa-contact-method" name="Contact method"><option value="">Select an option</option><option>Email</option><option>Phone call</option><option>WhatsApp</option></select></div></div></fieldset><fieldset class="enquiry-group"><legend>02 · Academic background</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-highest-qualification">Highest qualification <span aria-hidden="true">*</span></label><select id="sa-highest-qualification" name="Highest qualification" required=""><option value="">Select an option</option><option>Secondary school / WASSCE or equivalent</option><option>Certificate / Diploma</option><option>HND / Foundation degree</option><option>Bachelor’s degree</option><option>Master’s degree</option><option>Doctorate</option><option>Other / currently studying</option></select></div><div class="enquiry-field"><label for="sa-previous-institution">School / institution attended <span aria-hidden="true">*</span></label><input type="text" id="sa-previous-institution" name="Previous institution" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-previous-course">Subject / course studied <span aria-hidden="true">*</span></label><input type="text" id="sa-previous-course" name="Previous course" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-grade">Grade / GPA and grading scale</label><input type="text" id="sa-grade" name="Grade" maxlength="120"><small>For example: Second Class Upper, 3.4/4.0, or WASSCE subjects and grades. Enter “awaiting results” if applicable.</small></div><div class="enquiry-field"><label for="sa-completion-year">Completion year / expected year</label><input type="text" id="sa-completion-year" name="Completion year" maxlength="120"><small>For example: 2027 (expected).</small></div><div class="enquiry-field"><label for="sa-experience">Relevant work or research experience</label><textarea id="sa-experience" name="Experience" rows="3" maxlength="600"></textarea><small>Optional: useful for postgraduate and professional programmes.</small></div></div></fieldset><fieldset class="enquiry-group"><legend>03 · Your study plans</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-study-level">Intended level of study <span aria-hidden="true">*</span></label><select id="sa-study-level" name="Study level" required=""><option value="">Select an option</option><option>Foundation / Pathway</option><option>Certificate / Diploma</option><option>Bachelor’s degree</option><option>Master’s degree</option><option>PhD / Research degree</option><option>Professional / Short course</option><option>I need advice</option></select></div><div class="enquiry-field"><label for="sa-preferred-programme">Preferred course / subject area <span aria-hidden="true">*</span></label><input type="text" id="sa-preferred-programme" name="Preferred programme" required="" maxlength="120"><small>List your interests, or enter “I need help choosing a course”.</small></div><div class="enquiry-field"><label for="sa-preferred-countries">Preferred countries <span aria-hidden="true">*</span></label><input type="text" id="sa-preferred-countries" name="Preferred countries" required="" maxlength="120"><small>List one or more countries, or enter “Open to recommendations”.</small></div><div class="enquiry-field"><label for="sa-intake">Intended intake <span aria-hidden="true">*</span></label><input type="text" id="sa-intake" name="Intake" required="" maxlength="120"><small>For example: September 2027, January 2028, or “Flexible”.</small></div><div class="enquiry-field"><label for="sa-school-selection">Have you selected specific schools? <span aria-hidden="true">*</span></label><select id="sa-school-selection" name="School selection" required=""><option value="">Select an option</option><option>Yes — I have specific schools in mind</option><option>No — please help me find suitable schools</option><option>I have a shortlist but would like more options</option></select></div><div class="enquiry-field"><label for="sa-application-stage">Application stage</label><select id="sa-application-stage" name="Application stage"><option value="">Select an option</option><option>Exploring options</option><option>Preparing applications</option><option>Already applied</option><option>Offer received</option><option>Other / need advice</option></select></div></div></fieldset><fieldset class="enquiry-group" id="school-details" hidden disabled><legend>Your preferred schools</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-preferred-schools">School names, countries and programmes <span aria-hidden="true">*</span></label><textarea id="sa-preferred-schools" name="Preferred schools" required="" rows="3" maxlength="600"></textarea><small>List each school and the course you want to study there. Include a course link if you have one.</small></div><div class="enquiry-field"><label for="sa-school-deadlines">Application deadlines / offer details</label><textarea id="sa-school-deadlines" name="School deadlines" rows="3" maxlength="600"></textarea><small>Optional: mention any deadlines or conditions you already know.</small></div></div></fieldset><p class="enquiry-help" id="school-help" hidden>Not chosen a school yet? That’s fine. We’ll use your academic background, interests and budget to help you explore suitable options.</p><fieldset class="enquiry-group"><legend>04 · Funding and preparation</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-funding">How do you plan to fund your studies? <span aria-hidden="true">*</span></label><select id="sa-funding" name="Funding" required=""><option value="">Select an option</option><option>Self-funded</option><option>Family / private sponsor</option><option>Employer / organisation sponsor</option><option>Scholarship required</option><option>Combination of personal funds and scholarship</option><option>Still exploring funding</option></select></div><div class="enquiry-field"><label for="sa-tuition-budget">Estimated annual tuition budget and currency</label><input type="text" id="sa-tuition-budget" name="Tuition budget" maxlength="120"><small>For example: GBP 12,000 per year, or “Need advice”.</small></div><div class="enquiry-field"><label for="sa-living-budget">Living-cost budget and currency</label><input type="text" id="sa-living-budget" name="Living budget" maxlength="120"><small>Optional: tell us your monthly or annual estimate.</small></div><div class="enquiry-field"><label for="sa-language-test">English-language test status</label><select id="sa-language-test" name="Language test"><option value="">Select an option</option><option>Not taken yet</option><option>IELTS</option><option>TOEFL</option><option>PTE Academic</option><option>Duolingo English Test</option><option>Other test</option><option>May qualify for a waiver / need advice</option></select></div><div class="enquiry-field"><label for="sa-test-result">Test score and date, if available</label><input type="text" id="sa-test-result" name="Test result" maxlength="120"><small>Optional. Requirements vary by institution and programme.</small></div><div class="enquiry-field"><label for="sa-passport-readiness">Passport readiness</label><select id="sa-passport-readiness" name="Passport readiness"><option value="">Select an option</option><option>Valid passport available</option><option>Passport application in progress</option><option>Need to apply / renew</option><option>Prefer to discuss</option></select></div></div></fieldset><fieldset class="enquiry-checks"><legend>Documents available (select all that apply)</legend><div class="check-grid"><label><input type="checkbox" name="Documents available" value="Academic certificates"> <span>Academic certificates</span></label><label><input type="checkbox" name="Documents available" value="Transcripts / results"> <span>Transcripts / results</span></label><label><input type="checkbox" name="Documents available" value="CV / résumé"> <span>CV / résumé</span></label><label><input type="checkbox" name="Documents available" value="Personal statement / statement of purpose"> <span>Personal statement / statement of purpose</span></label><label><input type="checkbox" name="Documents available" value="Reference letters"> <span>Reference letters</span></label><label><input type="checkbox" name="Documents available" value="English-language test result"> <span>English-language test result</span></label><label><input type="checkbox" name="Documents available" value="Research proposal / portfolio"> <span>Research proposal / portfolio</span></label><label><input type="checkbox" name="Documents available" value="Still gathering documents"> <span>Still gathering documents</span></label></div></fieldset><fieldset class="enquiry-checks"><legend>Where would you like support?</legend><div class="check-grid"><label><input type="checkbox" name="Support needed" value="School and course selection"> <span>School and course selection</span></label><label><input type="checkbox" name="Support needed" value="Admission application"> <span>Admission application</span></label><label><input type="checkbox" name="Support needed" value="Scholarship search"> <span>Scholarship search</span></label><label><input type="checkbox" name="Support needed" value="Personal statement guidance"> <span>Personal statement guidance</span></label><label><input type="checkbox" name="Support needed" value="Document preparation"> <span>Document preparation</span></label><label><input type="checkbox" name="Support needed" value="Research proposal / portfolio guidance"> <span>Research proposal / portfolio guidance</span></label><label><input type="checkbox" name="Support needed" value="Understanding next steps after an offer"> <span>Understanding next steps after an offer</span></label><label><input type="checkbox" name="Support needed" value="Accommodation / pre-departure planning"> <span>Accommodation / pre-departure planning</span></label></div></fieldset><fieldset class="enquiry-group"><legend>05 · Anything else we should know?</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-additional-information">Questions, circumstances or additional requirements</label><textarea id="sa-additional-information" name="Additional information" rows="3" maxlength="600"></textarea><small>Optional. Do not include passport numbers, bank details or sensitive documents.</small></div></div></fieldset>
-            <label class="enquiry-consent"><input type="checkbox" name="Contact consent" value="I agree to be contacted about this study abroad enquiry." required> <span>I agree that SyfroEdge Consult may use the information I send to assess my study plans and contact me about this enquiry. *</span></label>
+<fieldset data-step="1" class="enquiry-group"><legend>01 · About you</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-full-name">Full name <span aria-hidden="true">*</span></label><input type="text" id="sa-full-name" name="Full name" autocomplete="name" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-email">Email address <span aria-hidden="true">*</span></label><input type="email" id="sa-email" name="Email" autocomplete="email" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-phone">Phone / WhatsApp (include country code) <span aria-hidden="true">*</span></label><input type="tel" id="sa-phone" name="Phone" autocomplete="tel" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-country-of-residence">Country of residence <span aria-hidden="true">*</span></label><input type="text" id="sa-country-of-residence" name="Country of residence" autocomplete="country-name" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-nationality">Nationality</label><input type="text" id="sa-nationality" name="Nationality" maxlength="120"><small>Helps us check the relevant admission and funding criteria.</small></div><div class="enquiry-field"><label for="sa-contact-method">Preferred contact method</label><select id="sa-contact-method" name="Contact method"><option value="">Select an option</option><option>Email</option><option>Phone call</option><option>WhatsApp</option></select></div></div></fieldset><fieldset data-step="2" class="enquiry-group"><legend>02 · Academic background</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-highest-qualification">Highest qualification <span aria-hidden="true">*</span></label><select id="sa-highest-qualification" name="Highest qualification" required=""><option value="">Select an option</option><option>Secondary school / WASSCE or equivalent</option><option>Certificate / Diploma</option><option>HND / Foundation degree</option><option>Bachelor’s degree</option><option>Master’s degree</option><option>Doctorate</option><option>Other / currently studying</option></select></div><div class="enquiry-field"><label for="sa-previous-institution">School / institution attended <span aria-hidden="true">*</span></label><input type="text" id="sa-previous-institution" name="Previous institution" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-previous-course">Subject / course studied <span aria-hidden="true">*</span></label><input type="text" id="sa-previous-course" name="Previous course" required="" maxlength="120"></div><div class="enquiry-field"><label for="sa-grade">Grade / GPA and grading scale</label><input type="text" id="sa-grade" name="Grade" maxlength="120"><small>For example: Second Class Upper, 3.4/4.0, or WASSCE subjects and grades. Enter “awaiting results” if applicable.</small></div><div class="enquiry-field"><label for="sa-completion-year">Completion year / expected year</label><input type="text" id="sa-completion-year" name="Completion year" maxlength="120"><small>For example: 2027 (expected).</small></div><div class="enquiry-field"><label for="sa-experience">Relevant work or research experience</label><textarea id="sa-experience" name="Experience" rows="3" maxlength="600"></textarea><small>Optional: useful for postgraduate and professional programmes.</small></div></div></fieldset><fieldset data-step="3" class="enquiry-group"><legend>03 · Your study plans</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-study-level">Intended level of study <span aria-hidden="true">*</span></label><select id="sa-study-level" name="Study level" required=""><option value="">Select an option</option><option>Foundation / Pathway</option><option>Certificate / Diploma</option><option>Bachelor’s degree</option><option>Master’s degree</option><option>PhD / Research degree</option><option>Professional / Short course</option><option>I need advice</option></select></div><div class="enquiry-field"><label for="sa-preferred-programme">Preferred course / subject area <span aria-hidden="true">*</span></label><input type="text" id="sa-preferred-programme" name="Preferred programme" required="" maxlength="120"><small>List your interests, or enter “I need help choosing a course”.</small></div><div class="enquiry-field"><label for="sa-preferred-countries">Preferred countries <span aria-hidden="true">*</span></label><input type="text" id="sa-preferred-countries" name="Preferred countries" required="" maxlength="120"><small>List one or more countries, or enter “Open to recommendations”.</small></div><div class="enquiry-field"><label for="sa-intake">Intended intake <span aria-hidden="true">*</span></label><input type="text" id="sa-intake" name="Intake" required="" maxlength="120"><small>For example: September 2027, January 2028, or “Flexible”.</small></div><div class="enquiry-field"><label for="sa-school-selection">Have you selected specific schools? <span aria-hidden="true">*</span></label><select id="sa-school-selection" name="School selection" required=""><option value="">Select an option</option><option>Yes — I have specific schools in mind</option><option>No — please help me find suitable schools</option><option>I have a shortlist but would like more options</option></select></div><div class="enquiry-field"><label for="sa-application-stage">Application stage</label><select id="sa-application-stage" name="Application stage"><option value="">Select an option</option><option>Exploring options</option><option>Preparing applications</option><option>Already applied</option><option>Offer received</option><option>Other / need advice</option></select></div></div></fieldset><fieldset data-step="3" class="enquiry-group" id="school-details" hidden disabled><legend>Your preferred schools</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-preferred-schools">School names, countries and programmes <span aria-hidden="true">*</span></label><textarea id="sa-preferred-schools" name="Preferred schools" required="" rows="3" maxlength="600"></textarea><small>List each school and the course you want to study there. Include a course link if you have one.</small></div><div class="enquiry-field"><label for="sa-school-deadlines">Application deadlines / offer details</label><textarea id="sa-school-deadlines" name="School deadlines" rows="3" maxlength="600"></textarea><small>Optional: mention any deadlines or conditions you already know.</small></div></div></fieldset><p class="enquiry-help" id="school-help" hidden>Not chosen a school yet? That’s fine. We’ll use your academic background, interests and budget to help you explore suitable options.</p><fieldset data-step="4" class="enquiry-group"><legend>04 · Funding and preparation</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-funding">How do you plan to fund your studies? <span aria-hidden="true">*</span></label><select id="sa-funding" name="Funding" required=""><option value="">Select an option</option><option>Self-funded</option><option>Family / private sponsor</option><option>Employer / organisation sponsor</option><option>Scholarship required</option><option>Combination of personal funds and scholarship</option><option>Still exploring funding</option></select></div><div class="enquiry-field"><label for="sa-tuition-budget">Estimated annual tuition budget and currency</label><input type="text" id="sa-tuition-budget" name="Tuition budget" maxlength="120"><small>For example: GBP 12,000 per year, or “Need advice”.</small></div><div class="enquiry-field"><label for="sa-living-budget">Living-cost budget and currency</label><input type="text" id="sa-living-budget" name="Living budget" maxlength="120"><small>Optional: tell us your monthly or annual estimate.</small></div><div class="enquiry-field"><label for="sa-language-test">English-language test status</label><select id="sa-language-test" name="Language test"><option value="">Select an option</option><option>Not taken yet</option><option>IELTS</option><option>TOEFL</option><option>PTE Academic</option><option>Duolingo English Test</option><option>Other test</option><option>May qualify for a waiver / need advice</option></select></div><div class="enquiry-field"><label for="sa-test-result">Test score and date, if available</label><input type="text" id="sa-test-result" name="Test result" maxlength="120"><small>Optional. Requirements vary by institution and programme.</small></div><div class="enquiry-field"><label for="sa-passport-readiness">Passport readiness</label><select id="sa-passport-readiness" name="Passport readiness"><option value="">Select an option</option><option>Valid passport available</option><option>Passport application in progress</option><option>Need to apply / renew</option><option>Prefer to discuss</option></select></div></div></fieldset><fieldset data-step="4" class="enquiry-checks"><legend>Documents available (select all that apply)</legend><div class="check-grid"><label><input type="checkbox" name="Documents available" value="Academic certificates"> <span>Academic certificates</span></label><label><input type="checkbox" name="Documents available" value="Transcripts / results"> <span>Transcripts / results</span></label><label><input type="checkbox" name="Documents available" value="CV / résumé"> <span>CV / résumé</span></label><label><input type="checkbox" name="Documents available" value="Personal statement / statement of purpose"> <span>Personal statement / statement of purpose</span></label><label><input type="checkbox" name="Documents available" value="Reference letters"> <span>Reference letters</span></label><label><input type="checkbox" name="Documents available" value="English-language test result"> <span>English-language test result</span></label><label><input type="checkbox" name="Documents available" value="Research proposal / portfolio"> <span>Research proposal / portfolio</span></label><label><input type="checkbox" name="Documents available" value="Still gathering documents"> <span>Still gathering documents</span></label></div></fieldset><fieldset data-step="4" class="enquiry-checks"><legend>Where would you like support?</legend><div class="check-grid"><label><input type="checkbox" name="Support needed" value="School and course selection"> <span>School and course selection</span></label><label><input type="checkbox" name="Support needed" value="Admission application"> <span>Admission application</span></label><label><input type="checkbox" name="Support needed" value="Scholarship search"> <span>Scholarship search</span></label><label><input type="checkbox" name="Support needed" value="Personal statement guidance"> <span>Personal statement guidance</span></label><label><input type="checkbox" name="Support needed" value="Document preparation"> <span>Document preparation</span></label><label><input type="checkbox" name="Support needed" value="Research proposal / portfolio guidance"> <span>Research proposal / portfolio guidance</span></label><label><input type="checkbox" name="Support needed" value="Understanding next steps after an offer"> <span>Understanding next steps after an offer</span></label><label><input type="checkbox" name="Support needed" value="Accommodation / pre-departure planning"> <span>Accommodation / pre-departure planning</span></label></div></fieldset><fieldset data-step="5" class="enquiry-group"><legend>05 · Anything else we should know?</legend><div class="enquiry-grid"><div class="enquiry-field"><label for="sa-additional-information">Questions, circumstances or additional requirements</label><textarea id="sa-additional-information" name="Additional information" rows="3" maxlength="600"></textarea><small>Optional. Do not include passport numbers, bank details or sensitive documents.</small></div></div></fieldset>
+            <div data-step="5"><label class="enquiry-consent"><input type="checkbox" name="Contact consent" value="I agree to be contacted about this study abroad enquiry." required> <span>I agree that SyfroEdge Consult may use the information I send to assess my study plans and contact me about this enquiry. *</span></label>
             <p class="enquiry-note">No document uploads are needed at this stage. Your entries are not saved on this website. Admission and funding decisions are made by the relevant institutions.</p>
-            <button type="submit" class="btn btn-primary">Review enquiry <span aria-hidden="true">→</span></button>
+            </div><div class="form-navigation"><button type="button" id="enquiry-back" class="btn btn-secondary" hidden>← Back</button><span class="form-save-note">Your details stay on this page until you email them.</span><button type="button" id="enquiry-next" class="btn btn-primary" hidden>Continue →</button><button type="submit" id="enquiry-submit" class="btn btn-primary">Review enquiry <span aria-hidden="true">→</span></button></div>
           </form>
           <div id="enquiry-review" hidden>
             <h3 tabindex="-1" id="enquiry-review-title">Review your enquiry</h3>
             <p>Check the details below. Nothing has been sent yet.</p>
             <label class="review-label" for="enquiry-summary">Your enquiry details</label>
-            <textarea id="enquiry-summary" rows="16" readonly></textarea>
+            <textarea id="enquiry-summary" rows="16" readonly spellcheck="false"></textarea>
             <div class="hero-actions enquiry-review-actions">
               <a id="enquiry-email" class="btn btn-primary" href="mailto:info@syfroedge.com">Open enquiry in email app</a>
               <button type="button" id="enquiry-copy" class="btn btn-secondary">Copy enquiry</button>
@@ -231,11 +219,18 @@
       </div>
     </section>
 
+    <section class="section faq" id="questions" aria-labelledby="faq-title"><div class="container faq-layout"><div><p class="eyebrow">A few helpful answers</p><h2 id="faq-title">Before we<br>get started.</h2><p class="large-copy">Have another question? We’re a conversation away.</p><a class="text-link" href="mailto:info@syfroedge.com">Ask our team <span aria-hidden="true">↗</span></a></div><div class="faq-list">
+      <details><summary>Which service is right for me?<span aria-hidden="true">+</span></summary><p>Start with the challenge you want to solve. Explore the service descriptions above or contact us with your goals, timeline and the support you need. We can discuss the best starting point together.</p></details>
+      <details><summary>Can I enquire without choosing a school?<span aria-hidden="true">+</span></summary><p>Yes. Select “No — please help me find suitable schools” in the study enquiry form. Your academic background, interests, preferred countries and budget will help us explore suitable options with you.</p></details>
+      <details><summary>What should I prepare for a study enquiry?<span aria-hidden="true">+</span></summary><p>Have your qualification, course interests, preferred intake and an idea of your funding ready. You can indicate which documents you already have. Passport numbers, financial records and document uploads are not needed for this initial enquiry.</p></details>
+      <details><summary>Does submitting an enquiry secure admission or funding?<span aria-hidden="true">+</span></summary><p>An enquiry starts a conversation about your options. Admission, scholarships and visa decisions are made by the relevant institutions and authorities, and requirements depend on the programme and destination.</p></details>
+      <details><summary>How does the website enquiry form send my information?<span aria-hidden="true">+</span></summary><p>The form prepares a summary in your browser. After reviewing it, open it in your email app or copy it into an email to info@syfroedge.com. You must send that email to complete your enquiry. Entries are not submitted to a website database.</p></details>
+    </div></div></section>
     <section class="section contact" id="contact">
       <div class="container contact-card">
         <div>
           <p class="eyebrow">Let’s work together</p>
-          <h2>Have a challenge worth solving?</h2>
+          <h2>Let’s make your<br>next move count.</h2>
           <p>Tell us what you are trying to achieve. We’ll help you identify the right next step.</p>
           <p class="contact-location">
             <strong>Find us in Accra</strong><br>
@@ -253,14 +248,10 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <div class="brand footer-brand"><span class="brand-logo"><img src="/syfroedge-logo.webp" alt="SyfroEdge Consult" /></span></div>
-      <p>Strategy. Research. Digital. Growth.</p>
-      <p>© <span id="year"></span> SyfroEdge Consult. All rights reserved.</p>
-    </div>
-  </footer>
+  <footer><div class="container"><div class="footer-top"><div><a class="brand" href="#top" aria-label="SyfroEdge Consult home"><span class="brand-logo"><img src="/syfroedge-logo.webp" alt="SyfroEdge Consult" width="138" height="64" loading="lazy"></span></a><p>Clear thinking. Practical support.<br>Possibilities worth pursuing.</p></div><nav aria-label="Footer navigation"><span class="micro-label">Explore</span><a href="#top">Home</a><a href="#services">Our expertise</a><a href="#study-abroad">Study Abroad</a><a href="#approach">Our approach</a></nav><nav aria-label="Useful links"><span class="micro-label">Let’s connect</span><a href="#study-abroad-enquiry">Study enquiry</a><a href="#questions">Frequently asked questions</a><a href="mailto:info@syfroedge.com">info@syfroedge.com</a><a href="tel:+233269999922">+233 26 999 9922</a></nav></div><div class="footer-bottom"><p>© <span id="year"></span> SyfroEdge Consult. All rights reserved.</p><span>Accra, Ghana</span><a href="#top">Back to top ↑</a></div></div></footer>
+  <div class="mobile-contact" aria-label="Quick contact"><a href="tel:+233269999922">Call our team <span aria-hidden="true">↗</span></a><a href="#study-abroad-enquiry">Study enquiry <span aria-hidden="true">→</span></a></div>
 
-  <script src="script.js?v=study-enquiry-1"></script>
+  <script src="script.js?v=syfroedge-2026-2"></script>
 </body>
 </html>
+
