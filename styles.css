@@ -147,3 +147,42 @@ footer { padding: 34px 0 44px; }
   .service-card { transition: none; }
   .service-card:hover { transform: none; }
 }
+
+/* Study enquiry form follows the site's existing colours and typography. */
+#study-abroad-enquiry { scroll-margin-top: 90px; background: #edf2ed; }
+.enquiry-panel { padding: 40px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+.enquiry-intro, .enquiry-note, .enquiry-help { color: var(--muted); }
+.enquiry-intro { margin: 0 0 30px; max-width: 900px; }
+.enquiry-intro a { color: var(--brand); text-decoration: underline; }
+.enquiry-group { min-width: 0; margin: 0 0 30px; padding: 24px; border: 1px solid var(--line); border-radius: 18px; }
+.enquiry-group legend { padding: 0 10px; color: var(--brand-dark); font-family: Manrope, sans-serif; font-size: 21px; font-weight: 800; }
+.enquiry-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.enquiry-field { min-width: 0; }
+.enquiry-field label, .review-label { display: block; margin-bottom: 8px; font-size: 16px; font-weight: 700; }
+.enquiry-field input, .enquiry-field select, .enquiry-field textarea, #enquiry-summary { width: 100%; min-width: 0; min-height: 50px; padding: 12px 14px; border: 1px solid #aebbb3; border-radius: 10px; color: var(--ink); background: var(--white); font: inherit; font-size: 16px; }
+.enquiry-field textarea, #enquiry-summary { resize: vertical; line-height: 1.6; }
+.enquiry-field small { display: block; margin-top: 7px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.enquiry-checks { min-width: 0; margin: 0 0 28px; padding: 0; border: 0; }
+.enquiry-checks legend { margin-bottom: 14px; font-weight: 700; }
+.check-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
+.check-grid label, .enquiry-consent { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; cursor: pointer; }
+.check-grid input, .enquiry-consent input { flex: 0 0 20px; width: 20px; height: 20px; margin: 3px 0 0; accent-color: var(--brand); }
+.enquiry-help { padding: 18px; border-left: 4px solid var(--brand); background: var(--paper); border-radius: 8px; }
+.enquiry-note { font-size: 14px; max-width: 920px; }
+.enquiry-panel button { cursor: pointer; font-family: inherit; }
+.enquiry-panel button.btn { border: 0; }
+.enquiry-panel button.btn-secondary { border: 1px solid var(--line); }
+.enquiry-panel button.text-link { background: none; border: 0; padding: 10px 0; }
+.enquiry-panel :focus-visible { outline: 3px solid var(--brand); outline-offset: 4px; }
+.enquiry-panel [hidden] { display: none !important; }
+#enquiry-review h3 { margin: 0 0 12px; font-size: 30px; }
+.enquiry-review-actions { align-items: center; margin: 22px 0; }
+#enquiry-status { color: var(--brand-dark); font-weight: 600; }
+@media (max-width: 680px) {
+  .enquiry-panel { padding: 24px 16px; }
+  .enquiry-group { padding: 20px 14px; }
+  .enquiry-grid, .check-grid { grid-template-columns: minmax(0, 1fr); }
+  .enquiry-group legend { font-size: 18px; }
+  .enquiry-panel .btn { width: 100%; padding: 12px 18px; text-align: center; }
+}
+
